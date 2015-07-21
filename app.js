@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 // 	res.send(fileContents);
 // });
 
-// Part III
+// Part III code
 app.get('/', function(req, res){ 
 	fs.readFile('data.txt', function(err, data){
 		res.header('Content-Type', 'text/html');
